@@ -24,9 +24,6 @@ output/
 # Logs
 *.log
 
-# Dev Containers
-.devcontainer/
-
 # macOS
 .DS_Store
 

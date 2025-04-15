@@ -1,0 +1,22 @@
+{
+  "name": "Python Dev - Poetry",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/bin/python3"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "esbenp.prettier-vscode",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "cd /workspace && ls -la && echo '📍 Current Dir:' && pwd && echo '🔍 Searching for pyproject.toml:' && find . -name pyproject.toml && poetry install",
+  "remoteUser": "root",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ]
+}
