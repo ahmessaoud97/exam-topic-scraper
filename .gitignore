@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+*.env
+
+# Poetry
+poetry.lock
+
+# Output
+output/
+*.pdf
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# Dev Containers
+.devcontainer/
+
+# macOS
+.DS_Store
+
+# Jupyter (if used later)
+.ipynb_checkpoints/
+
+# Others
+*.sqlite3
